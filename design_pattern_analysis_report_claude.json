@@ -1,0 +1,191 @@
+{
+  "overview": {
+    "total_samples": 1300,
+    "unique_patterns": 13,
+    "date_generated": "2026-01-08 23:34:01"
+  },
+  "overall_metrics": {
+    "accuracy": 0.9638461538461538,
+    "precision": 0.9660485620813818,
+    "recall": 0.9638461538461538,
+    "f1_score": 0.9642581932682542,
+    "n_samples": 1300
+  },
+  "pattern_wise_metrics": {
+    "AbstractFactory": {
+      "precision": 0.8952380952380953,
+      "recall": 0.94,
+      "f1_score": 0.9170731707317075,
+      "support": 100,
+      "tp": 94,
+      "fp": 11,
+      "fn": 6,
+      "tn": 1189
+    },
+    "Adapter": {
+      "precision": 0.9795918367346939,
+      "recall": 0.96,
+      "f1_score": 0.9696969696969697,
+      "support": 100,
+      "tp": 96,
+      "fp": 2,
+      "fn": 4,
+      "tn": 1198
+    },
+    "Builder": {
+      "precision": 0.97,
+      "recall": 0.97,
+      "f1_score": 0.97,
+      "support": 100,
+      "tp": 97,
+      "fp": 3,
+      "fn": 3,
+      "tn": 1197
+    },
+    "Decorator": {
+      "precision": 0.99,
+      "recall": 0.99,
+      "f1_score": 0.99,
+      "support": 100,
+      "tp": 99,
+      "fp": 1,
+      "fn": 1,
+      "tn": 1199
+    },
+    "Facade": {
+      "precision": 1.0,
+      "recall": 0.9019607843137255,
+      "f1_score": 0.9484536082474228,
+      "support": 102,
+      "tp": 92,
+      "fp": 0,
+      "fn": 10,
+      "tn": 1198
+    },
+    "FactoryMethod": {
+      "precision": 0.8715596330275229,
+      "recall": 0.95,
+      "f1_score": 0.9090909090909091,
+      "support": 100,
+      "tp": 95,
+      "fp": 14,
+      "fn": 5,
+      "tn": 1186
+    },
+    "Memento": {
+      "precision": 1.0,
+      "recall": 0.9696969696969697,
+      "f1_score": 0.9846153846153847,
+      "support": 99,
+      "tp": 96,
+      "fp": 0,
+      "fn": 3,
+      "tn": 1201
+    },
+    "None": {
+      "precision": 0.8928571428571429,
+      "recall": 1.0,
+      "f1_score": 0.9433962264150945,
+      "support": 100,
+      "tp": 100,
+      "fp": 12,
+      "fn": 0,
+      "tn": 1188
+    },
+    "Observer": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1_score": 0.98989898989899,
+      "support": 100,
+      "tp": 98,
+      "fp": 0,
+      "fn": 2,
+      "tn": 1200
+    },
+    "Prototype": {
+      "precision": 0.9693877551020408,
+      "recall": 0.9595959595959596,
+      "f1_score": 0.964467005076142,
+      "support": 99,
+      "tp": 95,
+      "fp": 3,
+      "fn": 4,
+      "tn": 1198
+    },
+    "Proxy": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1_score": 0.9795918367346939,
+      "support": 100,
+      "tp": 96,
+      "fp": 0,
+      "fn": 4,
+      "tn": 1200
+    },
+    "Singleton": {
+      "precision": 0.9896907216494846,
+      "recall": 0.96,
+      "f1_score": 0.9746192893401014,
+      "support": 100,
+      "tp": 96,
+      "fp": 1,
+      "fn": 4,
+      "tn": 1199
+    },
+    "Visitor": {
+      "precision": 1.0,
+      "recall": 0.99,
+      "f1_score": 0.9949748743718593,
+      "support": 100,
+      "tp": 99,
+      "fp": 0,
+      "fn": 1,
+      "tn": 1200
+    }
+  },
+  "error_analysis": {
+    "AbstractFactory_to_FactoryMethod": 6,
+    "Facade_to_None": 5,
+    "Facade_to_FactoryMethod": 4,
+    "Singleton_to_None": 3,
+    "FactoryMethod_to_AbstractFactory": 3,
+    "Proxy_to_Prototype": 3,
+    "Builder_to_AbstractFactory": 3,
+    "Adapter_to_AbstractFactory": 3,
+    "FactoryMethod_to_None": 2,
+    "Prototype_to_AbstractFactory": 2,
+    "Memento_to_Builder": 2,
+    "Prototype_to_Adapter": 2,
+    "Singleton_to_FactoryMethod": 1,
+    "Adapter_to_None": 1,
+    "Decorator_to_FactoryMethod": 1,
+    "Memento_to_Decorator": 1,
+    "Facade_to_Singleton": 1,
+    "Proxy_to_FactoryMethod": 1,
+    "Visitor_to_FactoryMethod": 1,
+    "Observer_to_None": 1,
+    "Observer_to_Builder": 1
+  },
+  "hallucination_analysis": [],
+  "confusion_matrix_info": {
+    "classes": [
+      "AbstractFactory",
+      "Adapter",
+      "Builder",
+      "Decorator",
+      "Facade",
+      "FactoryMethod",
+      "Memento",
+      "None",
+      "Observer",
+      "Prototype",
+      "Proxy",
+      "Singleton",
+      "Visitor"
+    ],
+    "matrix_shape": [
+      13,
+      13
+    ]
+  }
+}

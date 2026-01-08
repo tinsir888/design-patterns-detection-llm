@@ -1,0 +1,198 @@
+{
+  "overview": {
+    "total_samples": 1300,
+    "unique_patterns": 13,
+    "date_generated": "2026-01-08 23:25:14"
+  },
+  "overall_metrics": {
+    "accuracy": 0.9523076923076923,
+    "precision": 0.9566155525927907,
+    "recall": 0.9523076923076923,
+    "f1_score": 0.9529556145297906,
+    "n_samples": 1300
+  },
+  "pattern_wise_metrics": {
+    "AbstractFactory": {
+      "precision": 0.8495575221238938,
+      "recall": 0.96,
+      "f1_score": 0.9014084507042253,
+      "support": 100,
+      "tp": 96,
+      "fp": 17,
+      "fn": 4,
+      "tn": 1183
+    },
+    "Adapter": {
+      "precision": 0.9797979797979798,
+      "recall": 0.97,
+      "f1_score": 0.9748743718592964,
+      "support": 100,
+      "tp": 97,
+      "fp": 2,
+      "fn": 3,
+      "tn": 1198
+    },
+    "Builder": {
+      "precision": 0.9603960396039604,
+      "recall": 0.97,
+      "f1_score": 0.9651741293532338,
+      "support": 100,
+      "tp": 97,
+      "fp": 4,
+      "fn": 3,
+      "tn": 1196
+    },
+    "Decorator": {
+      "precision": 0.98989898989899,
+      "recall": 0.98,
+      "f1_score": 0.9849246231155778,
+      "support": 100,
+      "tp": 98,
+      "fp": 1,
+      "fn": 2,
+      "tn": 1199
+    },
+    "Facade": {
+      "precision": 1.0,
+      "recall": 0.9019607843137255,
+      "f1_score": 0.9484536082474228,
+      "support": 102,
+      "tp": 92,
+      "fp": 0,
+      "fn": 10,
+      "tn": 1198
+    },
+    "FactoryMethod": {
+      "precision": 0.8623853211009175,
+      "recall": 0.94,
+      "f1_score": 0.8995215311004784,
+      "support": 100,
+      "tp": 94,
+      "fp": 15,
+      "fn": 6,
+      "tn": 1185
+    },
+    "Memento": {
+      "precision": 1.0,
+      "recall": 0.9494949494949495,
+      "f1_score": 0.9740932642487047,
+      "support": 99,
+      "tp": 94,
+      "fp": 0,
+      "fn": 5,
+      "tn": 1201
+    },
+    "None": {
+      "precision": 0.847457627118644,
+      "recall": 1.0,
+      "f1_score": 0.9174311926605504,
+      "support": 100,
+      "tp": 100,
+      "fp": 18,
+      "fn": 0,
+      "tn": 1182
+    },
+    "Observer": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1_score": 0.98989898989899,
+      "support": 100,
+      "tp": 98,
+      "fp": 0,
+      "fn": 2,
+      "tn": 1200
+    },
+    "Prototype": {
+      "precision": 0.9574468085106383,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9326424870466321,
+      "support": 99,
+      "tp": 90,
+      "fp": 4,
+      "fn": 9,
+      "tn": 1197
+    },
+    "Proxy": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1_score": 0.9795918367346939,
+      "support": 100,
+      "tp": 96,
+      "fp": 0,
+      "fn": 4,
+      "tn": 1200
+    },
+    "Singleton": {
+      "precision": 0.9886363636363636,
+      "recall": 0.87,
+      "f1_score": 0.925531914893617,
+      "support": 100,
+      "tp": 87,
+      "fp": 1,
+      "fn": 13,
+      "tn": 1199
+    },
+    "Visitor": {
+      "precision": 1.0,
+      "recall": 0.99,
+      "f1_score": 0.9949748743718593,
+      "support": 100,
+      "tp": 99,
+      "fp": 0,
+      "fn": 1,
+      "tn": 1200
+    }
+  },
+  "error_analysis": {
+    "Singleton_to_AbstractFactory": 6,
+    "Facade_to_FactoryMethod": 5,
+    "AbstractFactory_to_FactoryMethod": 4,
+    "Prototype_to_None": 4,
+    "Facade_to_None": 4,
+    "Singleton_to_FactoryMethod": 3,
+    "Singleton_to_None": 3,
+    "FactoryMethod_to_None": 3,
+    "FactoryMethod_to_AbstractFactory": 3,
+    "Proxy_to_Prototype": 3,
+    "Builder_to_AbstractFactory": 3,
+    "Prototype_to_AbstractFactory": 2,
+    "Memento_to_Builder": 2,
+    "Prototype_to_Adapter": 2,
+    "Adapter_to_AbstractFactory": 2,
+    "Prototype_to_FactoryMethod": 1,
+    "Adapter_to_None": 1,
+    "Decorator_to_FactoryMethod": 1,
+    "Memento_to_None": 1,
+    "Memento_to_Decorator": 1,
+    "Facade_to_Singleton": 1,
+    "Proxy_to_FactoryMethod": 1,
+    "Visitor_to_AbstractFactory": 1,
+    "Observer_to_None": 1,
+    "Singleton_to_Builder": 1,
+    "Decorator_to_None": 1,
+    "Observer_to_Builder": 1,
+    "Memento_to_Prototype": 1
+  },
+  "hallucination_analysis": [],
+  "confusion_matrix_info": {
+    "classes": [
+      "AbstractFactory",
+      "Adapter",
+      "Builder",
+      "Decorator",
+      "Facade",
+      "FactoryMethod",
+      "Memento",
+      "None",
+      "Observer",
+      "Prototype",
+      "Proxy",
+      "Singleton",
+      "Visitor"
+    ],
+    "matrix_shape": [
+      13,
+      13
+    ]
+  }
+}
